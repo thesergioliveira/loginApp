@@ -14,10 +14,15 @@ body{
     margin: 3rem auto;
     text-align: center;
 }
+main{
+    height: 100%;
+}
 
 section{
+   
     display: inline-block;
     margin: 1rem;
+    transform: translateY(-3rem);
 }
 
 input{
@@ -54,23 +59,23 @@ section div button{
 /* second section, middle: separator and "or" circle */
 .separator{
     content:"";
-    height: 26vh;
+    height: 22vh;
     width: 0.09vw;
     background-color: rgb(72, 80, 88);
-    opacity: 0.2;
+    opacity: 0.1;
     margin: 0.8rem 1rem; 
-    transform: translateY(2.8rem);
+    transform: translateY(3.1rem);
     z-index:-1
 }
 .or{
     content:"";
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2.27rem;
+    width: 2.27rem;
     border: 1px solid rgb(72, 80, 88);
     border-radius: 50%;
     opacity: 0.2;
-    transform: translateY(-4rem);
-    background-color: white;
+    transform: translateY(-3.8rem);
+    background-color: rgb(255, 255, 255);
     padding: 0.6rem 0.2rem 0 0;
     z-index:1
     
