@@ -8,9 +8,9 @@
 /* general elements: body, section and input*/
 
 body{
-    border: 1px dashed red;
-    width: 100vw;
-    height: 100vh;
+    border: 1px solid rgba(72, 80, 88, 0.171);
+    width: 95vw;
+    height: 50vh;
     margin: 3rem auto;
     text-align: center;
 }
@@ -57,7 +57,7 @@ section div button{
     height: 26vh;
     width: 0.09vw;
     background-color: rgb(72, 80, 88);
-    opacity: 0.1;
+    opacity: 0.2;
     margin: 0.8rem 1rem; 
     transform: translateY(2.8rem);
     z-index:-1
@@ -76,3 +76,22 @@ section div button{
     
 }
 
+/* last div: "register now" and "forgotten" */
+footer div{
+    margin-top: 0.3rem;   
+}
+footer span{
+    color: rgb(38, 99, 168);
+    font-weight: bolder;
+}
+.liner{
+    content:"";
+    width: 100%;
+    height: 0.05rem;
+    border: 1 px solid rgba(82, 80, 80, 0.308);
+    background-color: rgba(128, 128, 128, 0.212);
+}
+.divider{
+    opacity: 0.2;
+    display: inline-block;
+}
