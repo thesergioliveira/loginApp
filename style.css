@@ -17,21 +17,39 @@ body{
 
 section{
     display: inline-block;
+    margin: 1rem;
 }
 
 input{
     display: block;
 }
 
-
 /* first section, left side: clickable bottons to social media services */
 
 section div button{
-    width: 16vw;
+    width: 25vw;
     height: 2.5rem;
-    margin: 0.8rem auto;
+    margin: 0.5rem auto;
 
 }
+
+.facebook-button{
+    background-color: rgba(87, 152, 236, 0.863);
+    border: none;
+    color:white;
+}
+.gmail-button{
+    background-color: rgba(221, 42, 42, 0.904);
+    border: none;
+    color:white;
+
+}
+.twitter-button{
+    background-color:#19B7EA;
+    border: none;
+    color:white;
+}
+
 
 /* second section, middle: separator and "or" circle */
 .separator{
@@ -41,15 +59,20 @@ section div button{
     background-color: rgb(72, 80, 88);
     opacity: 0.1;
     margin: 0.8rem 1rem; 
+    transform: translateY(2.8rem);
+    z-index:-1
 }
 .or{
     content:"";
-    height: 2rem;
-    width: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
     border: 1px solid rgb(72, 80, 88);
     border-radius: 50%;
     opacity: 0.2;
-    transform: translateY(-7.5rem);
+    transform: translateY(-4rem);
     background-color: white;
+    padding: 0.6rem 0.2rem 0 0;
+    z-index:1
+    
 }
 
