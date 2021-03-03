@@ -5,8 +5,7 @@
     margin: 0;
 }
 
-/* first section: clickable bottons to social media services */
-
+/* general elements: body, section and input*/
 
 body{
     border: 1px dashed red;
@@ -15,13 +14,33 @@ body{
     margin: 3rem auto;
     text-align: center;
 }
+
+section{
+    display: inline-block;
+}
+
+input{
+    display: block;
+}
+
+
+/* first section, left side: clickable bottons to social media services */
+
+section div button{
+    width: 16vw;
+    height: 2.5rem;
+    margin: 0.8rem auto;
+
+}
+
+/* second section, middle: separator and "or" circle */
 .separator{
     content:"";
-    height: 12vh;
-    width: 0.05vw;
+    height: 26vh;
+    width: 0.09vw;
     background-color: rgb(72, 80, 88);
     opacity: 0.1;
-    transform: scaleX(5rem);
+    margin: 0.8rem 1rem; 
 }
 .or{
     content:"";
@@ -30,7 +49,7 @@ body{
     border: 1px solid rgb(72, 80, 88);
     border-radius: 50%;
     opacity: 0.2;
+    transform: translateY(-7.5rem);
+    background-color: white;
 }
-section{
-    display: inline-block;
-}
+
