@@ -1,0 +1,36 @@
+/* every node section */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* first section: clickable bottons to social media services */
+
+
+body{
+    border: 1px dashed red;
+    width: 100vw;
+    height: 100vh;
+    margin: 3rem auto;
+    text-align: center;
+}
+.separator{
+    content:"";
+    height: 12vh;
+    width: 0.05vw;
+    background-color: rgb(72, 80, 88);
+    opacity: 0.1;
+    transform: scaleX(5rem);
+}
+.or{
+    content:"";
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid rgb(72, 80, 88);
+    border-radius: 50%;
+    opacity: 0.2;
+}
+section{
+    display: inline-block;
+}
