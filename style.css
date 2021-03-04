@@ -13,7 +13,6 @@ body{
     text-align: center;
     max-width: 44.175rem;
     min-width: 12.95rem;
-    border: 2px solid black;
 }
 main{
     display: flex;
@@ -25,23 +24,21 @@ main{
 .left-side{
     height: 80%;
     width: 45%;
-    border: 2px red dashed;
+    margin: 3% 3%;
 }
 
 .middle{
-    border: 2px red dashed;
     align-self: center;
 }
 
 
 .right-side{
     width: 45%;
-    /* height: 100%; */
-    border: 2px red dashed;
     align-self: left;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 1% 3%;
 }
 
 footer{
@@ -50,11 +47,11 @@ footer{
 
 /* left section: clickable bottons to social media services */
 
-section div button{
+section[class="left-side"] button{
     width: 25vw;
     height: 2.5rem;
     margin: 0.5rem auto;
-
+    max-width: 15rem;
 }
 
 .facebook-button{
@@ -103,6 +100,7 @@ section div button{
 
 /* right section: sign in component */
 h1{
+    width: 100%;
     margin-bottom: 0rem;
     color: rgba(0, 0, 0, 0.616);
 }
@@ -110,10 +108,13 @@ h1{
 .user-information{
     width: 100%;
     height: 4rem;
-    border: 2px solid red;
     display: flex;
     flex-flow: column;
     justify-content: center;
+}
+
+input[type="text"], input[type="password"]{
+    border:none; 
 }
 
 .underliner{
@@ -124,12 +125,13 @@ h1{
     background-color: rgba(56, 53, 53, 0.205);
 }
 
-.icon{
-    padding: 10px;
-    width: 5rem;
+.last-step-login{
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
-button{
+.login{
     align-self: center;
     width: 4rem;
     max-width: 15.70rem; 
@@ -143,14 +145,12 @@ button{
     font-size: 0.8rem;
 }
 
-input{
-    display: block;
-    border: none;
-    border-bottom: black;
+input[type="checkbox"]{
+    margin: 4% 3% 0 0;
 }
 
-input[placeholder="Username or email"]::after{
-    content:"👤";
+div span{
+    margin: 3% 18% 0 0;
 }
 
 /* last div: "register now" and "forgotten" */
