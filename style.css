@@ -1,3 +1,5 @@
+@import url(./css/all.css);
+
 /* every node section */
 *{
     box-sizing: border-box;
@@ -14,21 +16,32 @@ body{
     text-align: center;
 }
 main{
-    height: 80%;
+    height: 100%;
 }
 
 section{
    
     display: inline-block;
-    margin: 1rem;
+    margin-top: 1.4rem;
     transform: translateY(-3rem);
 }
 
 input{
     display: block;
+    border: none;
+    border-bottom: black;
+}
+
+input::after{
+
 }
 
 /* first section, left side: clickable bottons to social media services */
+.left-side{
+    height: 80%;
+    width: 40%;
+}
+
 
 section div button{
     width: 25vw;
@@ -78,6 +91,13 @@ section div button{
     padding: 0.6rem 0.2rem 0 0;
     z-index:1
     
+}
+
+/* third section: sign in component */
+
+.right-side{
+    height: 80%;
+    width: 40%;
 }
 
 /* last div: "register now" and "forgotten" */
