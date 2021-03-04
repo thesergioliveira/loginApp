@@ -1,3 +1,5 @@
+@import url(./fontawesome-free-5.15.2-web/css/all.css);
+
 /* every node section */
 *{
     box-sizing: border-box;
@@ -14,6 +16,7 @@ body{
     max-width: 44.175rem;
     min-width: 12.95rem;
 }
+
 main{
     display: flex;
     align-items: center;
@@ -25,6 +28,8 @@ main{
     height: 80%;
     width: 45%;
     margin: 3% 3%;
+    display: flex;
+    flex-flow: column;
 }
 
 .middle{
@@ -47,11 +52,13 @@ footer{
 
 /* left section: clickable bottons to social media services */
 
-section[class="left-side"] button{
+section[class="left-side"] a{
     width: 25vw;
     height: 2.5rem;
     margin: 0.5rem auto;
     max-width: 15rem;
+    text-decoration: none;
+    
 }
 
 .facebook-button{
@@ -86,8 +93,8 @@ section[class="left-side"] button{
 }
 .or{
     content:"";
-    height: 2.27rem;
-    width: 2.27rem;
+    height: 2.28rem;
+    width: 2.28rem;
     border: 1px solid rgba(0, 2, 3, 0.096);
     border-radius: 50%;
     transform: translateY(-4rem);
