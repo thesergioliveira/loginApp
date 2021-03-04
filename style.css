@@ -14,9 +14,7 @@ body{
     width: 95vw;
     margin: 3rem auto;
     text-align: center;
-}
-main{
-    height: 100%;
+    border: 2px red dashed;
 }
 
 section{
@@ -24,6 +22,18 @@ section{
     display: inline-block;
     margin-top: 1.4rem;
     transform: translateY(-3rem);
+    border: 2px red dashed;
+}
+
+.left-side{
+    height: 80%;
+    width: 40%;
+    border: 2px red dashed;
+}
+
+.right-side{
+    height: 80%;
+    width: 40%;
 }
 
 input{
@@ -32,15 +42,8 @@ input{
     border-bottom: black;
 }
 
-input::after{
-
-}
-
 /* first section, left side: clickable bottons to social media services */
-.left-side{
-    height: 80%;
-    width: 40%;
-}
+
 
 
 section div button{
@@ -95,10 +98,6 @@ section div button{
 
 /* third section: sign in component */
 
-.right-side{
-    height: 80%;
-    width: 40%;
-}
 
 /* last div: "register now" and "forgotten" */
 footer a , footer div{
