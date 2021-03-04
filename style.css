@@ -10,19 +10,18 @@
 /* general elements: body, section and input*/
 
 body{
-    border: 1px solid rgba(72, 80, 88, 0.171);
     width: 95vw;
     margin: 3rem auto;
     text-align: center;
-    border: 2px red dashed;
+    max-width: 44.175rem;
+    min-width: 12.95rem;
+    border: 2px solid black;
 }
-
-section{
-   
-    display: inline-block;
-    margin-top: 1.4rem;
-    transform: translateY(-3rem);
-    border: 2px red dashed;
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(72, 80, 88, 0.171);
 }
 
 .left-side{
@@ -31,20 +30,27 @@ section{
     border: 2px red dashed;
 }
 
+.middle{
+    border: 2px red dashed;
+    align-self: center;
+}
+
+
 .right-side{
-    height: 80%;
-    width: 40%;
+    width: 50%;
+    /* height: 100%; */
+    border: 2px red dashed;
+    align-self: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-input{
-    display: block;
-    border: none;
-    border-bottom: black;
+footer{
+    border: 1px solid rgba(82, 80, 80, 0.137);
 }
 
-/* first section, left side: clickable bottons to social media services */
-
-
+/* left section: clickable bottons to social media services */
 
 section div button{
     width: 25vw;
@@ -71,33 +77,63 @@ section div button{
 }
 
 
-/* second section, middle: separator and "or" circle */
+/*  middle section: separator and "or" circle */
 .separator{
     content:"";
-    height: 22vh;
+    height: 8rem;
     width: 0.09vw;
-    background-color: rgb(72, 80, 88);
-    opacity: 0.1;
-    margin: 0.8rem 1rem; 
-    transform: translateY(3.1rem);
-    z-index:-1
+    background-color: rgba(0, 0, 0, 0.13);
+    opacity: 1; 
+    transform: translateY(1.1rem);
+    margin: auto 1rem;
+    z-index:-1;
+    
 }
 .or{
     content:"";
     height: 2.27rem;
     width: 2.27rem;
-    border: 1px solid rgb(72, 80, 88);
+    border: 1px solid rgba(0, 2, 3, 0.096);
     border-radius: 50%;
-    opacity: 0.2;
-    transform: translateY(-3.8rem);
+    transform: translateY(-4rem);
     background-color: rgb(255, 255, 255);
     padding: 0.6rem 0.2rem 0 0;
-    z-index:1
+    color: rgba(128, 128, 128, 0.233);
+    z-index:1;
     
 }
 
-/* third section: sign in component */
+/* right section: sign in component */
 
+button{
+    align-self: center;
+    width: 10vw;
+    height: 2rem;
+    margin-top: 1%;
+    color: white;
+    background-color: rgba(69, 162, 238, 0.644);
+    border: none;
+    border-radius: 5%;
+    font-weight: bolder;
+    font-size: 3.5vh;
+}
+
+.user-information{
+        border: 2px dashed black;
+}
+[type="checkbox"]{
+    border: 2px solid black;
+}
+
+input{
+    display: block;
+    border: none;
+    border-bottom: black;
+}
+
+input[placeholder="Username or email"]::after{
+    content:"👤";
+}
 
 /* last div: "register now" and "forgotten" */
 footer a , footer div{
@@ -108,13 +144,7 @@ footer a{
     font-weight: bolder;
     text-decoration: none;
 }
-.liner{
-    content:"";
-    width: 100%;
-    height: 0.05rem;
-    border: 1 px solid rgba(82, 80, 80, 0.308);
-    background-color: rgba(128, 128, 128, 0.212);
-}
+
 .divider{
     opacity: 0.2;
     display: inline-block;
