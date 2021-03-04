@@ -10,7 +10,7 @@
 /* general elements: body, section and input*/
 
 body{
-    width: 95vw;
+    width: 60vw;
     margin: 3rem auto;
     text-align: center;
     max-width: 44.175rem;
@@ -26,7 +26,7 @@ main{
 
 .left-side{
     height: 80%;
-    width: 40%;
+    width: 45%;
     border: 2px red dashed;
 }
 
@@ -37,7 +37,7 @@ main{
 
 
 .right-side{
-    width: 50%;
+    width: 45%;
     /* height: 100%; */
     border: 2px red dashed;
     align-self: left;
@@ -104,6 +104,27 @@ section div button{
 }
 
 /* right section: sign in component */
+h1{
+    margin-bottom: 0rem;
+    color: rgba(0, 0, 0, 0.616);
+}
+
+.user-information{
+    width: 100%;
+    height: 4rem;
+    border: 2px solid red;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.underliner{
+    align-self:left;
+    content: "";
+    width: 85%;
+    height:0.08rem;
+    background-color: rgba(56, 53, 53, 0.205);
+}
 
 button{
     align-self: center;
@@ -115,14 +136,7 @@ button{
     border: none;
     border-radius: 5%;
     font-weight: bolder;
-    font-size: 3.5vh;
-}
-
-.user-information{
-        border: 2px dashed black;
-}
-[type="checkbox"]{
-    border: 2px solid black;
+    font-size: 1rem;
 }
 
 input{
@@ -148,4 +162,6 @@ footer a{
 .divider{
     opacity: 0.2;
     display: inline-block;
+    width: 0.1vw;
+    margin-right: 0.3rem;
 }
