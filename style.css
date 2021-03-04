@@ -52,19 +52,43 @@ footer{
 
 /* left section: clickable bottons to social media services */
 
-section[class="left-side"] a{
-    width: 25vw;
-    height: 2.5rem;
-    margin: 0.5rem auto;
-    max-width: 15rem;
-    text-decoration: none;
-    
+main section a{
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
 }
 
+main section p{
+    margin: 5.5% 0 0 6%;
+}
+
+.facebook-button, .gmail-button, .twitter-button {
+    width: 25vw;
+    height: 2.5rem;
+    margin: 0.3rem auto;
+    max-width: 15rem;
+    text-decoration: none;
+}
+
+.icon{
+    margin: 2% 5%;
+    font-size: 2rem;
+}
+
+.button-divider{
+    margin: 2% 1%;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.13);
+}
+.letter-sizing{
+    margin-top: 2%;
+    color: black;
+}
 .facebook-button{
     background-color: rgba(87, 152, 236, 0.863);
     border: none;
     color:white;
+    
 }
 .gmail-button{
     background-color: rgba(221, 42, 42, 0.904);
