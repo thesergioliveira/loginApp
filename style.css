@@ -131,7 +131,7 @@ h1{
 
 button{
     align-self: center;
-    width: 100%;
+    width: 4rem;
     max-width: 15.70rem; 
     height: 2rem;
     margin-top: 1%;
@@ -140,7 +140,7 @@ button{
     border: none;
     border-radius: 5%;
     font-weight: bolder;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 input{
