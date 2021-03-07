@@ -6,15 +6,14 @@
     padding: 0;
     margin: 0;
 }
-
 /* general elements: body, section and input*/
 
 body{
     width: 60vw;
     margin: 3rem auto;
     text-align: center;
-    max-width: 44.175rem;
-    min-width: 12.95rem;
+    max-width: 36.9375rem;
+    min-width: 22.7243rem;
 }
 
 main{
@@ -27,9 +26,11 @@ main{
 .left-side{
     height: 80%;
     width: 45%;
-    margin: 3% 3%;
+    margin: 3% 0;
     display: flex;
     flex-flow: column;
+    flex-wrap: wrap;
+    min-width: 10.0862rem;
 }
 
 .middle{
@@ -44,6 +45,8 @@ main{
     flex-direction: column;
     justify-content: space-between;
     margin: 1% 3%;
+    object-fit: contain;
+    min-width: 10.0862rem;
 }
 
 footer{
@@ -52,53 +55,62 @@ footer{
 
 /* left section: clickable bottons to social media services */
 
+/* editing the anchor elements inside the section */
 main section a{
     display: flex;
     justify-content: flex-start;
     text-align: center;
 }
 
+/* setting some margin to the p elements inside this section as to centalize the text */
+
 main section p{
-    margin: 5.5% 0 0 6%;
+    margin: 5%;
+    font-size: 1rem;
 }
 
+/* size and position for the anchors */
 .facebook-button, .gmail-button, .twitter-button {
-    width: 25vw;
+    width: 80%;
     height: 2.5rem;
-    margin: 0.3rem auto;
+    margin: 0.3rem 0 0 0.9rem;
     max-width: 15rem;
     text-decoration: none;
 }
 
+/* icon size and margin */
+
 .icon{
-    margin: 2% 5%;
-    font-size: 2rem;
+    margin: 5%;
+    font-size: 1.3rem;
 }
 
+/* vertical slash separating the icons and the text */
 .button-divider{
-    margin: 2% 1%;
-    font-size: 2rem;
+    margin: 3% 1%;
+    font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.13);
 }
-.letter-sizing{
-    margin-top: 2%;
-    color: black;
-}
+
+/*  */
 .facebook-button{
     background-color: rgba(87, 152, 236, 0.863);
     border: none;
+    border-radius: 30rem;
     color:white;
     
 }
 .gmail-button{
     background-color: rgba(221, 42, 42, 0.904);
     border: none;
+    border-radius: 30rem;
     color:white;
 
 }
 .twitter-button{
     background-color:#19B7EA;
     border: none;
+    border-radius: 30rem;
     color:white;
 }
 
@@ -145,15 +157,16 @@ h1{
 }
 
 input[type="text"], input[type="password"]{
-    border:none; 
+    border:none;
 }
 
 .underliner{
-    align-self:left;
+    align-self:right;
     content: "";
-    width: 85%;
+    width: 80%;
     height:0.08rem;
     background-color: rgba(56, 53, 53, 0.205);
+    margin-left: 8%;
 }
 
 .last-step-login{
